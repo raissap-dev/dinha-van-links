@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vó Dinha & Vô Van</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf6f1;
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #c8a97e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.2rem;
+      overflow: hidden;
+      border: 3px solid #c8a97e;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      color: #3b2a1a;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      color: #8c6b4a;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .btn {
+      display: block;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-family: 'Georgia', serif;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .btn-primary {
+      background-color: #3b2a1a;
+      color: #faf6f1;
+    }
+
+    .btn-secondary {
+      background-color: #c8a97e;
+      color: #3b2a1a;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #3b2a1a;
+      border: 2px solid #c8a97e;
+    }
+
+    .btn .icon {
+      margin-right: 0.5rem;
+    }
+
+    .footer {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      color: #b89a7a;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar">
+      <img src="./avatar.jpg" alt="Vó Dinha & Vô Van" />
+    </div>
+    <h1>Vó Dinha & Vô Van</h1>
+    <p class="tagline">Pães de fermentação natural, feitos à mão em Londrina</p>
+
+    <div class="links">
+      <a href="https://hildinhaeivan.short.gy/catalogo" class="btn btn-primary" target="_blank">
+        <span class="icon">🛒</span> Ver catálogo de produtos
+      </a>
+
+      <a href="https://wa.me/554391383908" class="btn btn-secondary" target="_blank">
+        <span class="icon">💬</span> Fazer pedido pelo WhatsApp
+      </a>
+
+      <a href="https://hotm.io/guia-primeiro-fermento" class="btn btn-outline" target="_blank">
+        <span class="icon">📖</span> E-book: faça seu primeiro pão
+      </a>
+
+      <a href="https://www.instagram.com/hildinhaeivan" class="btn btn-outline" target="_blank">
+        <span class="icon">📷</span> Instagram @hildinhaeivan
+      </a>
+    </div>
+
+    <p class="footer">Pão bom não tem pressa.</p>
+  </div>
+</body>
+</html>
